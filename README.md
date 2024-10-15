@@ -10,8 +10,12 @@ This project is a command-line based Prime Checker written in Java, designed to 
 2. Enter your username when prompted.
 3. Input a numeric sequence to find all the prime numbers it contains.
 4. Choose to continue or quit the program.
-5. Prime numbers elicited from sequences will be logged in primes.txt. Duplicates will not be logged.
-6. Run PrimeCheckerTest.java to confirm expected results / validation rules.
+5. Run PrimeCheckerTest.java to confirm expected results / validation rules.
+
+Note: 
+Each unique prime number elicited from sequences will be recorded in 'primes.txt'. 
+Info, Error & Debug logs can be found in 'application.log'. *These files will be generated when you first run the program.*
+
 
 ### Example
 

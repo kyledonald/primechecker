@@ -37,7 +37,8 @@ public class CacheManager {
                 cache.add(new BigInteger(line.trim()));
             }
         } catch (IOException e) {
-            System.out.println("Error reading existing primes from file: " + e.getMessage());
+            LoggerUtility.logError("Error reading existing primes from file: " + e.getMessage());
+            System.out.println("Unable to fetch primes file. This is expected behaviour for your first time running the program.");
         }
         System.out.println("Cache loaded with " + cache.size() + " prime numbers from the file.");
     }
@@ -52,7 +53,7 @@ public class CacheManager {
                 writer.write(prime.toString() + "\n");
             }
         } catch (IOException e) {
-            System.out.println("Error writing primes to file: " + e.getMessage());
+            LoggerUtility.logError("Error writing primes to file: " + e.getMessage());
         }
     }
 }
